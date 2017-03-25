@@ -9,3 +9,12 @@ git status
 git add . (It will add all the files under this folder)
 
 git add file1 (It will add only the file1 to the staging area)
+
+// Check the file's modification between working directory and staged area
+git diff 
+
+// Check the difference between staged area and repository
+git diff --staged
+
+// Reset all the changes made in staged area and working directory
+git reset hard (It'll reset all the changes made in both working directory and staged area)
