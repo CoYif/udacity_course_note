@@ -1,0 +1,11 @@
+// This is the beginning of real ultilizing git jourey 
+// First commond will initilise the current folder as a repository 
+git init 
+
+// Check current dirtory files status 
+git status
+
+// Add the files to the staging aread before commit
+git add . (It will add all the files under this folder)
+
+git add file1 (It will add only the file1 to the staging area)
