@@ -18,3 +18,16 @@ git diff --staged
 
 // Reset all the changes made in staged area and working directory
 git reset hard (It'll reset all the changes made in both working directory and staged area)
+
+// If you have insert a new commit when you checkout a commit. That new commit will be unreachable, to make it reachable you need to create a branch for it.
+// E.g. you have commit "a1" -> "a2" -> "a3" -> "a4"
+git checkout "a2"
+// You made some changes, then commit
+git commit "b1"
+git checkout master 
+git log 
+// You'll not see the commit "b1" you just made. becaue it's not in the master branch
+// You should do this
+git checkout "b1"
+git checkout -b New_Branch_Name (This commond is equivalent to "git branch New_Branch_Name", then "git checkout New_Branch_Name)
+// When you run that commond, you must in that commit "b1" position
