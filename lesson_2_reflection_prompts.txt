@@ -45,3 +45,9 @@ git checkout Branch_Name
 // Go back to the master branch 
 git checkout master 
 
+// delete a branch
+git branch -d Branch_Name
+
+// When you merge two branches, e.g. commit "b1" is form another branch ,"a1" is from master, if you want to see the diff between "b1" and it's parents, 
+// you cannot just diff "b1" and "a1", because "a1" it's not his parents maybe. You can run the commond below 
+git show "b1"
