@@ -18,3 +18,15 @@ git diff --staged
 
 // Reset all the changes made in staged area and working directory
 git reset hard (It'll reset all the changes made in both working directory and staged area)
+
+// Check the branches you have and you currently in
+git branch 
+
+// Create new branch 
+git branch Branch_Name
+
+// Checkout the branch 
+git checkout Branch_Name
+
+// Go back to the master branch 
+git checkout master 
