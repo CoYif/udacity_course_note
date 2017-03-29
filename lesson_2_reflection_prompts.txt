@@ -13,6 +13,14 @@ git add file1 (It will add only the file1 to the staging area)
 // Check the file's modification between working directory and staged area
 git diff 
 
+// Check the git log
+git log
+// display the log differently (only title info). This is used when you wanna see different branch's log
+git log --graph --oneline 
+// Shows only the latest commit ! The last number defined how many commits you wanna show!
+git log -n 1 (will show the latest one commit)
+git log -n 2 (will show the latest two commits)
+
 // Check the difference between staged area and repository
 git diff --staged
 
