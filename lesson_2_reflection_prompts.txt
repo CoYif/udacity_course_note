@@ -17,8 +17,10 @@ git diff
 git diff --staged
 
 // Reset all the changes made in staged area and working directory
-git reset hard (It'll reset all the changes made in both working directory and staged area)
+git reset --hard (It'll reset all the changes made in both working directory and staged area)
 
+// Remove staging area files
+git reset 
 
 // If you have insert a new commit when you checkout a commit. That new commit will be unreachable, to make it reachable you need to create a branch for it.
 // E.g. you have commit "a1" -> "a2" -> "a3" -> "a4"
