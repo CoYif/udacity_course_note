@@ -1,0 +1,33 @@
+/** In this lesson, you'll learn the commond about how to work with github website and cooperate with ours in the project
+// First you need to setup the connection with your github web repository 
+// Configure the git to remember the username and password of your github account, then when you push, no need to input 
+// the username and password again
+/*******Below is for Mac user*********\
+// we'll ultilise osxkeychain helper to remember your github account and password
+
+// First, check whether your osxkeychain is ready 
+git credential-osxkeychain
+>Usage: git credential-osxkeychain <get|store|erase>
+
+// If you didn't install it, you'll see below info
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app',
+requesting install. Choose an option in the dialog to download the command line developer tools.
+
+----------------------------------------------------------------------------------------------------------------------
+// Aftet osxkeychain is setup, run commond below
+git config --global credential.helper osxkeychain
+
+----------------------------------------------------------------------------------------------------------------------
+// If you want to push your local repository to github repository, first you need to login github to create a repository
+// Aftet you create a repository on github, you will have a http link 
+// check your current remote
+git remote
+
+// add the repository in your github as a remote
+git remote add origin URL
+
+// let remote show more info 
+git remote -v 
+
+// push your local branch to origin 
+git push origin master  
