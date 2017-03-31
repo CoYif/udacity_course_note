@@ -31,3 +31,7 @@ git remote -v
 
 // push your local branch to origin 
 git push origin master  
+
+----------------------------------------------------------------------------------------------------------------------
+// if you want to change your saved github account info, follow below instructions
+git credential-osxkeychain erase host=github.com protocol=https
