@@ -1,0 +1,16 @@
+You can config git on your mac by running below commond 
+
+// Setup a global edit. Eg.Using subl. <-n> means open a new windows; <-w> means wait until you close your file before continue
+git config --global core.editor "subl -n -w"
+
+// Make your git commit and save more handy 
+git config --global push.default upstream
+
+// Make the diff info more readable 
+git config --global merg.conflictstyle diff3
+
+// How to setup Visual Studio code as your default editor
+- Open Visual Studio code
+- Press the shortcut key: Shift + commond + P 
+- Type shell commond, you'll see install code commond on the path
+- Click it, then you'll be able to start visual Studio code using terminal just by typing 'code .'
