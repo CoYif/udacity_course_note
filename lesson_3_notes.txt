@@ -63,3 +63,5 @@ git pull
 // If you run <git pull> it may has confict, so it's better to run <git fetch> first, then using <git log origin/master>
 // or <git diff origin/master master> to see the difference between github and your local master branch 
 // when you make sure everything is ok, then run <git merge master origin/master>
+
+// This is almost all about it, hope you learned all of them and use it frequently!
