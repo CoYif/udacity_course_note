@@ -35,3 +35,31 @@ git push origin master
 ----------------------------------------------------------------------------------------------------------------------
 // if you want to change your saved github account info, follow below instructions
 git credential-osxkeychain erase host=github.com protocol=https
+
+----------------------------------------------------------------------------------------------------------------------
+// This is about how to get the repository from github. git clone will auto create a "origin" remote for you.
+git clone URL
+// Then if you run <git remote>, you'll see the remote <origin>.
+
+// Every time when you connect with github repository, the default master branch in github is called <origin/master>.
+// When you fetch or pull or push, it actually communicate with the origin/master branch 
+// E.g. If you made a new commit on github, origin/master will be one commint ahead of your local master repository. To 
+// synic with your github remote, you need to run <git fetch ?origin?>(origin is optional)
+git fetch (origin)
+
+// it will update the origin/master in your local repository
+// then you need to merge with your local master branch, <git merge master origin/master>
+git merge master origin/master
+
+// then you need to push the latest local repository to your github, to make both the same.
+git push origin master
+
+// But if you want to save efforts, and directly update and merger your local with github latest one. You can run comond:
+git pull 
+
+// git pull origin master == git fetch origin + then git merge master origin/master
+
+// Another case is if you github repository has some commits and your local also has some. 
+// If you run <git pull> it may has confict, so it's better to run <git fetch> first, then using <git log origin/master>
+// or <git diff origin/master master> to see the difference between github and your local master branch 
+// when you make sure everything is ok, then run <git merge master origin/master>
